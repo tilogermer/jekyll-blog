@@ -1,0 +1,7 @@
+<nav>
+  {% for item in site.data.navigation %}
+    
+    <a class="btn btn-outline-info mt-2 mr-2"href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+    
+  {% endfor %}
+</nav>
